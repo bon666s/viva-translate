@@ -1,6 +1,8 @@
 name: Linting and Testing
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   linting-testing-run:
