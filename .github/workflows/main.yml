@@ -26,3 +26,10 @@ jobs:
 
       - name: Test project compilation
         run: pnpm run build
+        
+      - name: Upload Extension
+        uses: actions/upload-artifact@v3
+        with:
+          name: browser-extension
+          path: ./dist # Cambia esto al directorio donde se genera la extensión
+
